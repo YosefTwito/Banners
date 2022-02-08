@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apptimus Banners</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+
+<body onload="fetchBanners()">
+    <div class="container">
+
+        <h1>Apptimus Banners <small>by yoseftwito5299@gmail.com</small></h1>
+
+        <!-- Banners List -->
+        <div id="banners-list">
+            
+        </div>
+          
+        <!-- <a href="https://www.apptimus.media/">
+                <img src="https://media-exp1.licdn.com/dms/image/C4D0BAQEvlG6RrL5tHw/company-logo_200_200/0/1556802476419?e=1652313600&v=beta&t=n9V0pPsMMryFH595WNOd8J68A6N5TyI_uOjim1fp4uw" alt="my picture" height="320" width="320" />
+        </a> -->
+
+        <div class="jumbotron">
+            <h3>Add New Banner:</h3>
+          <form id="bannerForm">
+            <div class="form-group">
+              <label for="imgUrl">Banner IMG URL</label>
+              <input type="text" class="form-control" id="imgUrl" placeholder="Enter Image URL ...">
+            </div>
+            <div class="form-group">
+              <label for="imgUrl">Redirect Link</label>
+              <input type="text" class="form-control" id="linkUrl" placeholder="Enter Link ...">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+
+        <button onclick="saveBanners()" class="btn btn-success">Save</button>
+
+        <button onclick="clearBanners()" class="btn btn-danger">Clear</button><br><br>
+      </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+</html>
